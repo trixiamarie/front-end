@@ -1,0 +1,213 @@
+/* IMPOSTAZIONI GENERALI */
+
+body{
+    background-image: url('../img/sfondo.png');
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 20rem;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h2{
+    text-align: center;
+    color:#313136;
+    font-weight: 500;
+
+}
+
+.nametime{
+    color:#a1a3a3;
+    font-size: 0.9em;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(0deg, rgba(5,114,136,1) 8%, rgba(0,160,196,1) 100%);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 5px rgb(44, 43, 43);
+}
+
+header>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header>div>a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav>ul{
+    font-weight: 500;
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+}
+
+li>i{
+    color: white;
+
+}
+
+img{
+    height: 4rem;
+padding-top: 1em;
+}
+
+/* MAIN */
+
+main{
+    background-color: white;
+    box-shadow: 0px 4px 5px rgb(44, 43, 43);
+    padding: 1em;
+}
+
+li>code{
+    background-color: #dfe3e4;
+    border-radius: 0.3em;
+    font-size: 1.3em;
+    border: #9b9a9b solid 0.1em;
+}
+
+b{
+    color: #aa2072;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+}
+
+iframe{
+    border-radius: 1em;
+    
+}
+
+#link{
+    color:#00a0c8;
+    font-weight: 600;
+}
+
+/* TABELLE */
+
+caption{
+    font-style: italic;
+    font-weight: 600;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: solid 0.1em #3366cc;
+}
+
+th{
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: #3366cc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    border: white 0.01em solid;
+}
+
+td{
+    text-align: center;
+    padding: 0.5em;
+}
+
+tr:nth-child(2n){
+    background-color: #f2f2f2;
+}
+
+/* FORM */
+
+#form{
+    margin-top: 2em;
+    background-color: #d5d5d5;
+    padding: 0.1em 1em 1em 1em;
+}
+
+button{
+    background-color: #3366cc;
+    color: white;
+    font-weight: 500;
+    border:none;
+}
+
+input{
+    border-style: dotted;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0.2em;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside>div{
+    background-color: #dee3e4;
+    border:#d5d5d5 1px solid;
+    margin: 0em 0em 1em 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.date{
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+aside a{
+    color:#00a0c8;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer{
+    font-size: 0.8em;
+    padding: 1em;
+    box-shadow: 0px 4px 5px rgb(44, 43, 43);
+    color: white;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0,97,116,1) 8%, rgba(53,62,55,1) 100%);
+}
+
+footer>p{
+    margin-top:0%;
+}
+
+footer>p>code{
+    font-size: 1.5em;
+}
+
+address>a{
+    color:#ff00fe;
+    font-weight: 600;
+}
