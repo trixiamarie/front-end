@@ -116,17 +116,17 @@ if(x>y && x>z){
   if (y>z){
   console.log(x,y,z)
 }
-else if(z<y){
+else if(y<z){
   console.log(x,z,y)
 }
 }
 
 if(y>x && y>z){
   if(x>z){
-  console.log(y,z,x)
+  console.log(y,x,z)
 }
 else if(x<z){
-  console.log(y,x,z)
+  console.log(y,z,x)
 }
 }
 
