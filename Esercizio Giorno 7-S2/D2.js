@@ -107,18 +107,17 @@ else {
   Alla fine mostra il risultato in console.
 */
 
-let x=prompt("inserisci un numero");
-let y=prompt("inserisci un numero");
-let z=prompt("inserisci un numero");
+let x=prompt ("inserisci un numero");
+let y=prompt ("inserisci un numero");
+let z=prompt ("inserisci un numero");
 
 
-if(x>y && x>z){
+/*if(x>y && x>z){
   if (y>z){
-  console.log(x,y,z)
-}
-else if(y<z){
-  console.log(x,z,y)
-}
+    console.log(x,y,z)
+  } else if(y<z){
+    console.log(x,z,y)
+  }
 }
 
 if(y>x && y>z){
@@ -135,6 +134,33 @@ if(z>x && z>y){
   console.log(z,y,x)
 }
 else if(y<x){
+  console.log(z,x,y)
+}
+}
+*/
+
+if(Number(x)>Number(y) && Number(x)>Number(z)){
+  if (y>z){
+    console.log(x,y,z)
+  } else if(y<z){
+    console.log(x,z,y)
+  }
+}
+
+if (Number(y)>Number(x) && Number(y)>Number(z)){
+  if(Number(x)>Number(z)){
+  console.log(y,x,z)
+}
+else if(Number(x)<Number(z)){
+  console.log(y,z,x)
+}
+}
+
+if(Number(z)>Number(x) && Number(z)>(y)){
+  if (Number(y)>Number(x)){
+  console.log(z,y,x)
+}
+else if(Number(y)<Number(x)){
   console.log(z,x,y)
 }
 }
