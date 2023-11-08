@@ -296,6 +296,10 @@ let sumAnni = movies.reduce((x, y) => {
   return x + annoComeNumero;
 }, 0);
 
+let titoli2= movies.map((x) => x.Year);
+
+console.log(titoli2);
+
 console.log(sumAnni);
 
 /* ESERCIZIO 14 (find)
