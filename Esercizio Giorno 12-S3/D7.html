@@ -36,7 +36,7 @@
   <body>
     <div>
       <h1>Questo è il titolo della pagina</h1>
-      <h2>Questo è il sottotitolo della pagina</h2>
+      <h2 onclick="changeColorWithRandom()" id="" color="">Questo è il sottotitolo della pagina</h2>
     </div>
 
     <div>
@@ -195,14 +195,22 @@
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      let s = document.querySelector("footer");
+      let b = document.querySelector("footer a");
+
+      s.addEventListener("click", function(){
+        alert(b.href);
+      });
+
+      /*const revealFooterLink = function () {
+      }*/
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-      const generateTable = function () {
+      /*const generateTable = function () {
         let table= document.createElement("table");
         let row = document.createElement("tr")
 
@@ -232,13 +240,36 @@
         table.style.border="1px solid #000";
       }
 
-        generateTable();
+        generateTable();*/
+
+        const generateTable = function () {
+    let divTable = document.getElementById('tableArea')
+    let newTable = document.createElement('table')
+    divTable.appendChild(newTable)
+    let t1row=document.createElement('tr')
+    newTable.appendChild(t1row)
+    let i=0;
+    while(i<arguments.length) {
+        let tableHeading = document.createElement('th')
+        t1row.appendChild(tableHeading)
+        tableHeading.innerText = arguments[i]
+        i++;
+    }
+
+
+    /* for(let i=0; i<5; i++) {
+        t1row.appendChild(tableHeading)
+    } */
+
+
+}
+generateTable('a', 'b')
 
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
 
-      const addRow = function () {
+      /*const addRow = function () {
         let table = document.querySelector("table");
         let nuovaRiga = document.createElement("tr");
 
@@ -266,7 +297,7 @@
         table.appendChild(nuovaRiga);
       }
 
-      addRow();
+      addRow();*/
 
       /* ESERCIZIO 13
       Crea una funzione che nasconda le immagini della tabella quando eseguita
@@ -291,14 +322,40 @@
       /* EXTRA ESERCIZIO 14
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
+    const changeColorWithRandom = function () {
+        let R = Math.floor(Math.random() * 256);
+        let G = Math.floor(Math.random() * 256);
+        let B = Math.floor(Math.random() * 256);
 
-      const changeColorWithRandom = function () {}
+        let randomColor = `#${R.toString(16)}${G.toString(16)}${B.toString(16)};`
+        document.querySelector("#changeMyColor").style.color = randomColor;
+      }
+
 
       /* EXTRA ESERCIZIO 15
       Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
     */
 
-      const deleteVowels = function () {}
+    function deleteVowels() {
+  const elementiTestuali = document.querySelectorAll('p, h1, h2, h3, div, li, a');
+
+  const vocali = ['a', 'e', 'i', 'o', 'u'];
+
+  elementiTestuali.forEach((elemento) => {
+    const testoOriginale = elemento.innerText;
+
+    const testoSenzaVocali = testoOriginale
+      .split('')
+      .filter(carattere => !vocali.includes(carattere.toLowerCase()))
+      .join('');
+
+    elemento.innerText = testoSenzaVocali;
+  });
+}
+
+
+
+deleteVowels();
     </script>
   </body>
 </html>

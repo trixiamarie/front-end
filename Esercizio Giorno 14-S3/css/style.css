@@ -1,0 +1,32 @@
+html{
+    background-color: black;
+}
+
+h1, h2, h3, #appointments{
+    color: white;
+    text-align: center;
+
+}
+
+#appointments{
+    display: none;
+}
+
+.container{
+    padding: 1em;
+}
+
+.color-epic{
+    color: blueviolet;
+}
+
+.selected{
+    background-color: aquamarine;
+}
+
+.day{
+    display: inline-block;
+    padding: 3.2%;
+    width: 3em;
+    border: solid 1px white;
+}
