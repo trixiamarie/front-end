@@ -167,6 +167,15 @@ html {font-size: 62.5%;}
     }
 }
 
+@media print {
+    main{
+        box-shadow: none;
+    }
+    .hideprint{
+        display: none;
+    }
+}
+
 body { 
     font-family: Poppins, 'Helvetica Neue', sans-serif;
     font-size: 1.4rem;
