@@ -4,9 +4,6 @@ html {font-size: 62.5%;}
 
 
 @media (min-width: 1200px){
-    html{
-        max-width: fit-content;
-    }
     body{
         margin-left: 5%;
         margin-right: 5%;
@@ -288,11 +285,11 @@ thead tr {
     background-color: #3f6bca;
     color: #ffffff;
 }
-th, td {
+/* th, td {
     padding: 12px 15px;
     vertical-align: bottom;
     text-align: center;
-}
+} */
 tbody tr {
     border-bottom: 1px solid #dddddd;
 }
