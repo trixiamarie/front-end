@@ -1,0 +1,25 @@
+.title {
+    font-size: 3rem;
+    color: #742305;
+    margin: 0rem;
+    font-weight: bold;
+  }
+  .section2 {
+    display: flex;
+    align-items: center;
+    background-color: #fef7e2;
+    border-radius: 1rem;
+  }
+  .section2 img {
+    height: 15rem;
+    width: auto;
+    margin: 1rem;
+  }
+  .section2 p {
+    color: #742305;
+    line-height: 1.5;
+  }
+  .section2 p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
