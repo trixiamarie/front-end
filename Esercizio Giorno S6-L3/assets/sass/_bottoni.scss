@@ -1,0 +1,27 @@
+
+$button: (
+    primary: $btnblue,
+    secondary: $btnorange,
+    tertiary: $btngreen
+);
+
+@each $x, $y in $button {
+  .btn-#{$x} {
+    background-color: $y;
+    color: $text;
+    border: none;
+  }
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: $paddingbtn;
+    margin: 3px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+
+

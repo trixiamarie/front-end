@@ -1,0 +1,55 @@
+/*style scss*/
+@import '_reset';
+@import '_spaziature';
+@import '_colori';
+@import '_font';
+@import '_header';
+@import '_bottoni';
+@import '_mixinsgenerici.scss';
+
+nav{
+    
+    padding: $padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    padding: $paddingbtn;
+}
+a{
+    color: $text;
+    text-decoration: none;
+}
+.showcase-content{
+    display: flex;
+    padding: $padding;
+    h1{
+        font-size: $h1hero;
+        padding: $padding;
+    }
+    p{
+        padding: $padding;
+    }
+    img{
+        width: 50%;
+    }
+}
+main {
+    position: relative;
+  
+    .line-4 {
+      @include grid(4);
+      div {
+        padding-inline: 0.5rem;
+        img {
+          width: 100%;
+          @include floating;
+        }
+      }
+    }
+  }
